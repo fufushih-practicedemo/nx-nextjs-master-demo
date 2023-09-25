@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-nextjs-master-demo/iron-components": [
+        "libs/iron-components/src/index.ts",
+      ],
+      "master-css": ["./master.css.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
