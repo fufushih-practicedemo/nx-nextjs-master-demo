@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-react': ^7.14.5
   '@master/css': 2.0.0-beta.173
   '@master/css-extractor.vite': 2.0.0-beta.173
+  '@master/css-extractor.webpack': 2.0.0-beta.173
   '@master/css.react': 2.0.0-beta.173
   '@nx/cypress': 16.9.0
   '@nx/eslint-plugin': 16.9.0
@@ -58,6 +59,7 @@ specifiers:
 dependencies:
   '@master/css': 2.0.0-beta.173
   '@master/css-extractor.vite': 2.0.0-beta.173_vite@4.3.9
+  '@master/css-extractor.webpack': 2.0.0-beta.173
   '@master/css.react': 2.0.0-beta.173_i73ekzlbntu7jol6ph2fvy4mga
   '@nx/next': 16.9.0_q4l3epvrwfi4wogiuf5e6ibbru
   next: 13.4.1_pamseawcqpaoyqfggclsvtomea
@@ -2420,6 +2422,14 @@ packages:
       '@master/css-extractor': 2.0.0-beta.173
       lodash.debounce: 4.0.8
       vite: 4.3.9_@types+node@18.14.2
+    dev: false
+
+  /@master/css-extractor.webpack/2.0.0-beta.173:
+    resolution: {integrity: sha512-D5H4iVCHezvDUhjF0L8P5rg5J0AWjycz5VwoZY7Ik2TlbhMXSoZDTWr5ja7x2VHPQLVXlWC6quceCXqrnzP4JA==}
+    dependencies:
+      '@master/css': 2.0.0-beta.173
+      '@master/css-extractor': 2.0.0-beta.173
+      webpack-virtual-modules: 0.5.0
     dev: false
 
   /@master/css-extractor/2.0.0-beta.173:
@@ -13563,7 +13573,6 @@ packages:
 
   /webpack-virtual-modules/0.5.0:
     resolution: {integrity: sha512-kyDivFZ7ZM0BVOUteVbDFhlRt7Ah/CSPwJdi8hBpkK7QLumUqdLtVfm/PX/hkcnrvr0i77fO5+TjZ94Pe+C9iw==}
-    dev: true
 
   /webpack/5.88.2_v2eo2wltzqljnhtuok2vbosoqm:
     resolution: {integrity: sha512-JmcgNZ1iKj+aiR0OvTYtWQqJwq37Pf683dY9bVORwVbUrDhLhdn/PlO2sHsFHPkj7sHNQF3JwaAkp49V+Sq1tQ==}

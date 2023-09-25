@@ -2,6 +2,7 @@
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
+const { CSSExtractorPlugin } = require('@master/css-extractor.webpack')
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
@@ -12,6 +13,10 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  webpack: (config) => {
+    config.module.rules.push(new CSSExtractorPlugin());
+    return config;
+  }
 };
 
 const plugins = [
