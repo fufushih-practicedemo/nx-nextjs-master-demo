@@ -1,4 +1,5 @@
-@import '.virtual/master.css';
+/* FIXME: Problem with Module not found: Can't resolve '.virtual/master.css' */
+/* @import '.virtual/master.css'; */
 
 html {
   -webkit-text-size-adjust: 100%;

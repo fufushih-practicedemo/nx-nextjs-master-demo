@@ -4,6 +4,14 @@
 const { composePlugins, withNx } = require('@nx/next');
 const { CSSExtractorPlugin } = require('@master/css-extractor.webpack')
 
+
+/** @type {import('webpack').Configuration} */
+const webpackConfig = {
+  plugins: [
+      new CSSExtractorPlugin()
+  ]
+}
+
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
@@ -14,7 +22,7 @@ const nextConfig = {
     svgr: false,
   },
   webpack: (config) => {
-    config.module.rules.push(new CSSExtractorPlugin());
+    config.plugins.concat(webpackConfig)
     return config;
   }
 };
